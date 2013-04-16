@@ -1,0 +1,50 @@
+
+$bg: "../img/paper_fibers.png";
+$bgRetina: "../img/paper_fibers_@2X.png";
+$logo: "../img/logo.png";
+$logoRetina: "../img/logo_@2X.png";
+
+
+
+body {
+    background:url($bgRetina) repeat 0 0 transparent;
+}
+
+
+.logo {
+    width:243px;
+    height:49px;
+    margin:0 auto;
+    text-indent: -999999px;
+    overflow: hidden;
+    background:url($logoRetina) no-repeat top center transparent;
+    @include background-size(100%);
+    line-height: 20px;
+}
+
+
+h2 {
+    font-size:14px;
+    line-height:25px;
+    text-transform: uppercase;
+}
+
+section {}
+
+.wrap {
+    width:960px;
+    margin:40px auto;
+    @include box-shadow(0 0 0 6px #ddd);
+    background-color:rgba(255,255,255,0.2);
+}
+
+header {padding-top:10px;}
+header .container,
+.main section {background-color:$white;margin-bottom:10px;padding:10px 20px;@include box-sizing(border-box);}
+
+
+.main section {
+    h2 {margin-top:-5px;}
+
+
+}
